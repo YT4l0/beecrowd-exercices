@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+
+double calculasalario(double salarioFix, double totalvendas)
+{
+    double bonus;
+    bonus = totalvendas * 0.15;
+
+    return bonus + salarioFix;
+
+}
+
+int main (){
+char nome;
+double salarioFix, totalvendas, salariofinal;
+
+
+
+scanf("%s", &nome);
+scanf("%lf", &salarioFix);
+scanf("%lf", &totalvendas);
+
+
+
+
+salariofinal = calculasalario(salarioFix, totalvendas);
+
+printf("TOTAL = R$ %.2lf\n", salariofinal);
+
+
+
+
+
+    return 0;
+}
