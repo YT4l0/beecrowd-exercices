@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+    int number;
+    int hours;
+    float wageForHour;
+    float TotalWage;
+
+    scanf("%d %d %f", &number, &hours, &wageForHour);
+
+     TotalWage = hours * wageForHour;
+
+    printf("NUMBER = %d\n", number);
+    printf("SALARY = U$ %.2f\n", TotalWage);
+    return 0;
+}
